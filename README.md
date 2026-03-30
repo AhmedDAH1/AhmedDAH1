@@ -11,8 +11,7 @@
 - 🛠️ Building security tools and CTF writeups to sharpen my skills
 - 🌱 Learning: Network protocols, penetration testing fundamentals, SIEM & log analysis
 - 💬 Ask me about networking, Python scripting, or CTF challenges
-- 📫 Reach me at: **[your-email@example.com]**
-
+- 📫 Reach me at: pach.trojan@gmail.com
 ---
 
 ## 🔧 Tech Stack & Focus Areas
@@ -75,9 +74,9 @@
 
 ## 📡 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/yourusername)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/ahmed-dahdouh)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/AhmedDAH1)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:pach.trojan@gmail.com)
 
 ---
 
