@@ -1,13 +1,3 @@
-<div align="center">
-
-```
-█████╗ ██╗  ██╗███╗   ███╗███████╗██████╗ ██████╗  █████╗ ██╗  ██╗ ██╗
-██╔══██╗██║  ██║████╗ ████║██╔════╝██╔══██╗██╔══██╗██╔══██╗██║  ██║███║
-███████║███████║██╔████╔██║█████╗  ██║  ██║██║  ██║███████║███████║╚██║
-██╔══██║██╔══██║██║╚██╔╝██║██╔══╝  ██║  ██║██║  ██║██╔══██║██╔══██║ ██║
-██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██████╔╝██████╔╝██║  ██║██║  ██║ ██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═╝
-```
 
 ### `whoami`
 > Cybersecurity student · Python enthusiast · Breaking things to learn how they work
@@ -80,10 +70,4 @@ ahmed = {
 
 ---
 
-<div align="center">
 
-*"The quieter you become, the more you can hear."* — Kali Linux
-
-![Profile views](https://komarev.com/ghpvc/?username=AhmedDAH1&color=red&style=flat-square)
-
-</div>
