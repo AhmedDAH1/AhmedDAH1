@@ -31,7 +31,7 @@
 
 ## 🚀 Featured Projects
 
-### 🔍 [network-scanner](https://github.com/yourusername/network-scanner)
+### 🔍 [network-scanner](https://github.com/AhmedDAH1/network-scanner)
 > Custom Python network scanner — host discovery, port enumeration & OS fingerprinting using raw sockets and Scapy.
 
 ### 🚨 [log-threat-detector](https://github.com/yourusername/log-threat-detector)
