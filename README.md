@@ -34,13 +34,13 @@
 ### 🔍 [network-scanner](https://github.com/AhmedDAH1/network-scanner)
 > Custom Python network scanner — host discovery, port enumeration & OS fingerprinting using raw sockets and Scapy.
 
-### 🚨 [log-threat-detector](https://github.com/yourusername/log-threat-detector)
+### 🚨 [log-threat-detector](https://github.com/AhmedDAH1/log-threat-detector)
 > SIEM-style log parser that ingests syslog/Apache logs and flags anomalous activity using rule-based heuristics.
 
-### 🏴 [ctf-writeups](https://github.com/yourusername/ctf-writeups)
+### 🏴 [ctf-writeups](https://github.com/AhmedDAH1/ctf-writeups)
 > Documented solutions from TryHackMe & PicoCTF — network forensics, web exploits, and cryptography challenges.
 
-### 🛡️ [password-auditor](https://github.com/yourusername/password-auditor)
+### 🛡️ [password-auditor](https://github.com/AhmedDAH1/password-auditor)
 > CLI tool that checks password strength via entropy scoring and HaveIBeenPwned API breach lookups.
 
 ---
