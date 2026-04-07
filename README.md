@@ -37,11 +37,7 @@
 ### 🚨 [log_threat_detector](https://github.com/AhmedDAH1/log_threat_detector)
 > SIEM-style log parser that ingests syslog/Apache logs and flags anomalous activity using rule-based heuristics.
 
-### 🏴 [ctf-writeups](https://github.com/AhmedDAH1/ctf-writeups)
-> Documented solutions from TryHackMe & PicoCTF — network forensics, web exploits, and cryptography challenges.
 
-### 🛡️ [password-auditor](https://github.com/AhmedDAH1/password-auditor)
-> CLI tool that checks password strength via entropy scoring and HaveIBeenPwned API breach lookups.
 
 ---
 
