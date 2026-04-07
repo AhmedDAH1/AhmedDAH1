@@ -34,7 +34,7 @@
 ### 🔍 [network-scanner](https://github.com/AhmedDAH1/network-scanner)
 > Custom Python network scanner — host discovery, port enumeration & OS fingerprinting using raw sockets and Scapy.
 
-### 🚨 [log-threat-detector](https://github.com/AhmedDAH1/log-threat-detector)
+### 🚨 [log_threat_detector](https://github.com/AhmedDAH1/log_threat_detector)
 > SIEM-style log parser that ingests syslog/Apache logs and flags anomalous activity using rule-based heuristics.
 
 ### 🏴 [ctf-writeups](https://github.com/AhmedDAH1/ctf-writeups)
@@ -48,8 +48,8 @@
 ## 📊 GitHub Stats
 
 <p align="left">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=github_dark&hide_border=true&count_private=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=github_dark&hide_border=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=AhmedDAH1&show_icons=true&theme=github_dark&hide_border=true&count_private=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedDAH1&layout=compact&theme=github_dark&hide_border=true" />
 </p>
 
 ---
@@ -81,7 +81,7 @@
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&style=flat-square&color=blue" alt="profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=AhmedDAH1&style=flat-square&color=blue" alt="profile views"/>
 </p>
 
 > *"Security is not a product, but a process."* — Bruce Schneier
