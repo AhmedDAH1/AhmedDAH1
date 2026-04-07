@@ -48,8 +48,7 @@
 ## 📊 GitHub Stats
 
 <p align="left">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=AhmedDAH1&show_icons=true&theme=github_dark&hide_border=true&count_private=true&cache_seconds=1800" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedDAH1&layout=compact&theme=github_dark&hide_border=true&cache_seconds=1800" />
+  <img height="160" src="https://streak-stats.demolab.com?user=AhmedDAH1&theme=github-dark&hide_border=true" />
 </p>
 ---
 
