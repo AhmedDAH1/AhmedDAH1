@@ -28,7 +28,7 @@
 ### **Security Orchestration, Automation & Response Platform**
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/soar-lite)
-[![Demo](https://img.shields.io/badge/▶️_Demo-Watch_Video-FF0000?style=flat-square&logo=youtube)](YOUR_YOUTUBE_LINK)
+[![Demo](https://img.shields.io/badge/▶️_Demo-Watch_Video-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=Wade9SSN-Ts)
 [![CI](https://github.com/AhmedDAH1/soar-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmedDAH1/soar-lite/actions)
 [![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite)
 [![Coverage](https://img.shields.io/badge/coverage-84%25-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite)
@@ -56,7 +56,7 @@ APIs:       VirusTotal · AbuseIPDB · IP Geolocation
 
 **Impact:** Reduces incident response time from 30+ minutes to under 2 minutes through automation.
 
-**[→ Watch 6-Minute Demo](YOUR_YOUTUBE_LINK)** | **[→ View Code](https://github.com/AhmedDAH1/soar-lite)**
+**[→ Watch 6-Minute Demo](https://www.youtube.com/watch?v=Wade9SSN-Ts)** | **[→ View Code](https://github.com/AhmedDAH1/soar-lite)**
 
 ---
 
