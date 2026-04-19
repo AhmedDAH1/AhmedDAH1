@@ -1,4 +1,10 @@
-# Hi there, I'm Ahmed Dahdouh 👋
+
+<div align="center">
+  <img src="https://github.com/AhmedDAH1.png" width="150" style="border-radius: 50%;" />
+  
+  # Hi there, I'm Ahmed Dahdouh 👋
+  **Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
+</div># Hi there, I'm Ahmed Dahdouh 👋
 **Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
