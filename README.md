@@ -15,23 +15,6 @@
 
 ## 🎯 About Me
 
-```python
-class SecurityEngineer:
-    def __init__(self):
-        self.name = "Ahmed Dahdouh"
-        self.role = "Cybersecurity Engineer & Developer"
-        self.education = "Software Engineering @ Zhengzhou University"
-        self.focus = ["SOC Automation", "Threat Intelligence", "Security Tools"]
-        self.current_goal = "SOC Analyst / Security Engineer positions"
-    
-    def build_tools(self):
-        return [
-            "🔐 SOAR-Lite - Security Orchestration Platform",
-            "📧 Email Threat Analyzer - Phishing Detection Engine", 
-            "🚨 Log Threat Detector - SIEM-style CLI Tool",
-            "📡 Network Scanner - Reconnaissance Tool"
-        ]
-```
 
 🔹 **4 production-grade security tools built** — SOAR automation, phishing detection, log analysis, network scanning  
 🔹 **150+ tests across projects** — 80%+ coverage, CI/CD with GitHub Actions  
