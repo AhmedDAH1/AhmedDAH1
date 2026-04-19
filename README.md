@@ -4,7 +4,7 @@
   
   # Hi there, I'm Ahmed Dahdouh 👋
   **Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
-</div># Hi there, I'm Ahmed Dahdouh 👋
+</div>
 **Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
