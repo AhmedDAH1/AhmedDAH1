@@ -1,12 +1,3 @@
-
-<div align="center">
-  <img src="https://github.com/AhmedDAH1.png" width="150" style="border-radius: 50%;" />
-  
-  # Hi there, I'm Ahmed Dahdouh 👋
-  **Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
-</div>
-**Software Engineering Student @ Zhengzhou University · Cybersecurity Engineer**
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:pach.trojan@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-00C7B7?style=for-the-badge&logo=github)](https://github.com/AhmedDAH1?tab=repositories)
