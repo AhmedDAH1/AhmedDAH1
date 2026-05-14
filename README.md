@@ -64,6 +64,37 @@ APIs:       VirusTotal · AbuseIPDB · IP Geolocation
 **Tech:** Python · email module · VirusTotal API · pytest
 
 ---
+### **Attack Surface Mapper** - Enterprise Security Assessment Platform
+[![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/attack-surface-mapper)
+[![Tests](https://img.shields.io/badge/tests-23%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/attack-surface-mapper)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://github.com/AhmedDAH1/attack-surface-mapper)
+
+**The Challenge:** Security teams spend hours manually scanning networks, mapping findings to frameworks, and generating compliance reports.
+
+**My Solution:** Built an all-in-one platform that automates vulnerability scanning, MITRE ATT&CK mapping, and compliance checking with 3 different interfaces.
+
+**What It Does:**
+- 🔍 **Network Scanning** - Multi-threaded port discovery & service enumeration
+- 🎯 **MITRE ATT&CK Mapping** - Automatic technique identification from 703 techniques
+- 📋 **Compliance Checking** - PCI-DSS v4.0, NIST CSF, CIS Controls v8 analysis
+- 🌐 **Threat Intelligence** - Shodan global exposure checks & VirusTotal IP reputation
+- 📊 **Advanced Analytics** - Trend analysis, risk heat maps, anomaly detection
+- 📄 **Multi-Format Reports** - JSON, HTML, PDF, CSV generation
+- 🔔 **Real-Time Alerting** - Slack webhook integration for monitoring
+- 🎨 **3 Interfaces** - CLI for automation, terminal dashboard with ASCII art, modern web UI
+
+**Technical Stack:**
+Backend:    Python 3.9+ · Flask · Flask-SocketIO · WebSockets · Multi-threading
+Frontend:   Vanilla JS · Chart.js · Real-time updates · Gradient design
+Analytics:  Time-series analysis · Anomaly detection · Historical tracking
+Testing:    pytest · 23 unit tests · GitHub Actions ready
+APIs:       MITRE ATT&CK · CVE/NVD · Shodan · VirusTotal · Slack webhooks
+Reports:    ReportLab (PDF) · Jinja2 (HTML) · CSV export
+Features:   10 major features · 2,500+ lines of code · 3 user interfaces
+
+**Impact:** Reduces security assessment time from hours to minutes with automated scanning, compliance checking, and professional report generation.
+
+**[→ View Code](https://github.com/AhmedDAH1/attack-surface-mapper)** | **[→ See Screenshots](https://github.com/AhmedDAH1/attack-surface-mapper#screenshots)**
 
 ### 🚨 [Log Threat Detector](https://github.com/AhmedDAH1/log_threat_detector)
 **SIEM-Style Log Analysis & Threat Correlation**
