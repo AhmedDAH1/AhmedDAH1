@@ -1,5 +1,5 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:pach.trojan@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:adahdouh123@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-00C7B7?style=for-the-badge&logo=github)](https://github.com/AhmedDAH1?tab=repositories)
 
 ---
@@ -239,11 +239,11 @@ building:
 ## 📡 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-dahdouh)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pach.trojan@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adahdouh123@gmail.com)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/AhmedDAH1)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AhmedDAH1)
 
-📧 **Email:** pach.trojan@gmail.com  
+📧 **Email:** adahdouh123@gmail.com  
 💼 **LinkedIn:** [linkedin.com/in/ahmed-dahdouh](https://www.linkedin.com/in/ahmed-dahdouh)  
 🔗 **Portfolio:** [github.com/AhmedDAH1](https://github.com/AhmedDAH1?tab=repositories)
 
