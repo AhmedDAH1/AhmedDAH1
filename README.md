@@ -210,16 +210,6 @@ building:
 
 ---
 
-## 📈 GitHub Statistics
-
-
-
-<p align="left">
-  <img height="180" src="https://streak-stats.demolab.com?user=AhmedDAH1&theme=github-dark-blue&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-</p>
-
----
-
 ## 🎯 What I'm Looking For
 
 **Seeking SOC Analyst / Security Engineer roles** where I can:
