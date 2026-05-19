@@ -172,7 +172,7 @@ Docker · Git/GitHub · CI/CD (GitHub Actions) · Linux/Bash · pytest
 ## 🎓 Education & Certifications
 
 **🎓 Bachelor of Software Engineering**  
-Zhengzhou University · 2021 - Present
+Zhengzhou University · 2023 - Present
 
 **📜 Certifications & Learning**
 | Status | Certification |
