@@ -2,10 +2,10 @@
 
 **SOC Analyst · Blue-Team Security Engineer** — building production-grade security tooling with real threat-intelligence integration.
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-ahmeddah1.github.io-7d2b2b?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmeddah1.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:adahdouh123@gmail.com)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-212C42?style=for-the-badge&logo=tryhackme)](https://tryhackme.com/p/AhmedDAH1)
-🔗 **[Live portfolio → ahmeddah1.github.io](https://ahmeddah1.github.io)**
 
 ---
 
