@@ -1,252 +1,110 @@
+# Ahmed Dahdouh
+
+**SOC Analyst · Blue-Team Security Engineer** — building production-grade security tooling with real threat-intelligence integration.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:adahdouh123@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-00C7B7?style=for-the-badge&logo=github)](https://github.com/AhmedDAH1?tab=repositories)
-
----
-# Ahmed Dahdouh — Portfolio
-   
-   My cybersecurity engineering portfolio showcasing 5 production security tools.
-   
-   🔗 **Live site:** https://ahmeddah1.github.io
-
----
-## 🎯 About Me
-
-
-🔹 **4 production-grade security tools built** — SOAR automation, phishing detection, log analysis, network scanning  
-🔹 **150+ tests across projects** — 80%+ coverage, CI/CD with GitHub Actions  
-🔹 **Real threat intelligence integration** — VirusTotal, AbuseIPDB, IP geolocation APIs  
-🔹 **Docker deployment ready** — Containerized applications with PostgreSQL  
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-212C42?style=for-the-badge&logo=tryhackme)](https://tryhackme.com/p/AhmedDAH1)
 
 ---
 
-## 🚀 Featured Project: SOAR-Lite
+## About
 
-### **Security Orchestration, Automation & Response Platform**
+Software Engineering student specializing in cybersecurity, focused on the blue-team SOC workflow — alert triage, threat intelligence, log analysis, and incident response. I've built **five security tools**, **four of them deployed as live demos**, each with automated tests, Docker packaging, and CI/CD. Seeking an entry-level SOC Analyst role.
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/soar-lite)
-[![Demo](https://img.shields.io/badge/▶️_Demo-Watch_Video-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=Wade9SSN-Ts)
-[![CI](https://github.com/AhmedDAH1/soar-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmedDAH1/soar-lite/actions)
-[![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite)
+---
+
+## 🚀 Featured: SOAR-Lite — Security Orchestration, Automation & Response
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://soar-lite.onrender.com)
+[![Demo Video](https://img.shields.io/badge/▶_6min_Walkthrough-YouTube-red?style=flat-square&logo=youtube)](https://youtu.be/Wade9SSN-Ts)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/soar-lite)
+[![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite/actions)
 [![Coverage](https://img.shields.io/badge/coverage-84%25-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite)
 
-**The Challenge:** SOC analysts spend hours on repetitive tasks—checking if IPs are malicious, manually escalating incidents, copy-pasting data into reports.
+Automates the full SOC triage workflow — alert ingestion via webhooks, IOC extraction, async threat-intelligence enrichment (VirusTotal, AbuseIPDB), a YAML playbook engine, and one-click PDF/DOCX reports. Cuts simulated incident response from 30+ minutes to under 2.
 
-**My Solution:** Built a SOAR platform that automates the entire workflow from alert ingestion to final report generation.
+**Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL/SQLite · Docker
 
-**What It Does:**
-- ⚡ **Alert Ingestion** - Webhooks from SIEM/EDR/email gateways (simulated CrowdStrike, Splunk)
-- 🔍 **IOC Extraction** - Regex-based parsing extracts IPs, domains, file hashes, emails from alerts
-- 🌐 **Threat Intelligence** - Async API calls to VirusTotal (70+ AV engines) & AbuseIPDB
-- 🤖 **Automated Playbooks** - YAML-based rules auto-escalate severity and tag incidents
-- 📊 **Web Dashboard** - Real-time metrics with Chart.js, dark-themed SOC interface
-- 📄 **Report Generation** - One-click PDF/DOCX reports with executive summaries
-
-**Technical Stack:**
-```
-Backend:    Python 3.10 · FastAPI · PostgreSQL · SQLAlchemy · Alembic
-Frontend:   Vanilla JS · Tailwind CSS · Chart.js
-Testing:    pytest · 53 tests · 84% coverage · GitHub Actions CI/CD
-Deployment: Docker · Docker Compose · Production-ready
-APIs:       VirusTotal · AbuseIPDB · IP Geolocation
-```
-
-**Impact:** Reduces incident response time from 30+ minutes to under 2 minutes through automation.
-
-**[→ Watch 6-Minute Demo](https://www.youtube.com/watch?v=Wade9SSN-Ts)** | **[→ View Code](https://github.com/AhmedDAH1/soar-lite)**
+**🚀 [Live demo](https://soar-lite.onrender.com)** · **🎬 [6-min walkthrough](https://youtu.be/Wade9SSN-Ts)** · **[Code](https://github.com/AhmedDAH1/soar-lite)**
 
 ---
 
-## 🛠️ Other Security Projects
+## 🛠️ Security Projects
 
-### 📧 [Email Threat Analyzer](https://github.com/AhmedDAH1/email-threat-analyzer)
-**Phishing Detection Engine with VirusTotal Integration**
+### 📧 Email Threat Analyzer — Phishing Detection Engine
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://email-threat-analyzer-zt7f.onrender.com)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/email-threat-analyzer)
 
-- Parses `.eml` files and analyzes headers, URLs, attachments, body content
-- Multi-layer threat scoring (0-100) using weighted model
-- VirusTotal API integration for real-time malware checks
-- 34 unit tests · GitHub Actions CI · Tested against Nazario phishing corpus
+Live web tool — paste any `.eml` and see it scored 0–100 across header, URL, attachment, and content modules. Validated at **73% detection on the Nazario phishing corpus** (414 real-world emails), with a labeled benign control demonstrating low false positives. Docker + gunicorn, 34 tests, CI.
 
-**Tech:** Python · email module · VirusTotal API · pytest
+**Tech:** Python · Flask · Docker · VirusTotal API · pytest
+**🔗 [Live demo](https://email-threat-analyzer-zt7f.onrender.com)** · **[Code](https://github.com/AhmedDAH1/email-threat-analyzer)**
 
----
-### **Attack Surface Mapper** - Enterprise Security Assessment Platform
-[![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/attack-surface-mapper)
-[![Tests](https://img.shields.io/badge/tests-23%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/attack-surface-mapper)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://github.com/AhmedDAH1/attack-surface-mapper)
+### 🚨 Log Threat Detector — SIEM-Style Log Analysis & Correlation
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://log-threat-detector.onrender.com)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/log_threat_detector)
 
-**The Challenge:** Security teams spend hours manually scanning networks, mapping findings to frameworks, and generating compliance reports.
-
-**My Solution:** Built an all-in-one platform that automates vulnerability scanning, MITRE ATT&CK mapping, and compliance checking with 3 different interfaces.
-
-**What It Does:**
-- 🔍 **Network Scanning** - Multi-threaded port discovery & service enumeration
-- 🎯 **MITRE ATT&CK Mapping** - Automatic technique identification from 703 techniques
-- 📋 **Compliance Checking** - PCI-DSS v4.0, NIST CSF, CIS Controls v8 analysis
-- 🌐 **Threat Intelligence** - Shodan global exposure checks & VirusTotal IP reputation
-- 📊 **Advanced Analytics** - Trend analysis, risk heat maps, anomaly detection
-- 📄 **Multi-Format Reports** - JSON, HTML, PDF, CSV generation
-- 🔔 **Real-Time Alerting** - Slack webhook integration for monitoring
-- 🎨 **3 Interfaces** - CLI for automation, terminal dashboard with ASCII art, modern web UI
-
-**Technical Stack:**
-Backend:    Python 3.9+ · Flask · Flask-SocketIO · WebSockets · Multi-threading
-Frontend:   Vanilla JS · Chart.js · Real-time updates · Gradient design
-Analytics:  Time-series analysis · Anomaly detection · Historical tracking
-Testing:    pytest · 23 unit tests · GitHub Actions ready
-APIs:       MITRE ATT&CK · CVE/NVD · Shodan · VirusTotal · Slack webhooks
-Reports:    ReportLab (PDF) · Jinja2 (HTML) · CSV export
-Features:   10 major features · 2,500+ lines of code · 3 user interfaces
-
-**Impact:** Reduces security assessment time from hours to minutes with automated scanning, compliance checking, and professional report generation.
-
-**[→ View Code](https://github.com/AhmedDAH1/attack-surface-mapper)** | **[→ See Screenshots](https://github.com/AhmedDAH1/attack-surface-mapper#screenshots)**
-
-### 🚨 [Log Threat Detector](https://github.com/AhmedDAH1/log_threat_detector)
-**SIEM-Style Log Analysis & Threat Correlation**
-
-- Ingests SSH, Apache, syslog files to detect brute-force, port scans, anomalies
-- Correlation engine identifies attack patterns across log sources
-- AbuseIPDB threat intelligence integration
-- Real-time Flask dashboard with WebSocket updates
-- Email alerting · SQLite persistence · 14 unit tests
+Ingests SSH, Apache, and syslog files to detect brute-force attempts, port scans, and anomalies; correlation engine identifies cross-source attack patterns. Real-time Flask + WebSocket dashboard, AbuseIPDB enrichment, email alerting, SQLite persistence. Containerized.
 
 **Tech:** Python · Flask · SQLite · AbuseIPDB API · Chart.js
+**🔗 [Live demo](https://log-threat-detector.onrender.com)** · **[Code](https://github.com/AhmedDAH1/log_threat_detector)**
 
----
+### 📡 Network Scanner — Multi-Threaded Network Reconnaissance
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://network-scanner-8ihy.onrender.com)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/network-scanner)
 
-### 📡 [Network Scanner](https://github.com/AhmedDAH1/network-scanner)
-**Multi-Threaded Network Reconnaissance Tool**
+Scapy-based scanner with ARP/ICMP host discovery, multi-threaded SYN/UDP port scanning, TTL-based OS fingerprinting, MAC vendor lookup, and CVE vulnerability lookup. Web dashboard with live scan streaming. Docker with least-privilege capabilities (NET_RAW, never `--privileged`).
 
-- Host discovery, port enumeration, OS fingerprinting with Scapy
-- CVE vulnerability lookup integration
-- Multi-threaded scanning for performance
-- Web dashboard for visualization
+**Tech:** Python · Scapy · Docker · Flask
+**🔗 [Live demo](https://network-scanner-8ihy.onrender.com)** · **[Code](https://github.com/AhmedDAH1/network-scanner)**
 
-**Tech:** Python · Scapy · Raw Sockets · Multi-threading
+### 🎯 Attack Surface Mapper — Security Assessment Platform
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/attack-surface-mapper)
+
+Automated vulnerability scanning with MITRE ATT&CK technique mapping and compliance checks against PCI-DSS v4.0, NIST CSF, and CIS Controls v8. Three interfaces (CLI, terminal dashboard, web UI), Shodan exposure checks, Slack alerting, multi-format reporting (PDF/HTML/CSV/JSON). 23 tests.
+
+**Tech:** Python · Flask-SocketIO · MITRE ATT&CK · Shodan
+**[Code](https://github.com/AhmedDAH1/attack-surface-mapper)**
 
 ---
 
 ## 🔧 Technical Skills
 
-### **Security & Networking**
-```
-Threat Detection · Incident Response · Log Analysis · Phishing Analysis
-Network Forensics · Packet Analysis (Wireshark) · Vulnerability Assessment
-SIEM Concepts · IOC Extraction · Threat Intelligence · CTF Challenges
-```
+**Security & Blue Team** — Threat Detection · Incident Response · SIEM Concepts · Log Analysis · IOC Extraction · MITRE ATT&CK · Phishing Analysis · Threat Intelligence (VirusTotal, AbuseIPDB, Shodan) · Packet Analysis (Wireshark) · Vulnerability Assessment
 
-### **Development**
-```
-Python (FastAPI, Flask, asyncio) · REST APIs · SQL (PostgreSQL, SQLite)
-Docker · Git/GitHub · CI/CD (GitHub Actions) · Linux/Bash · pytest
-```
+**Development** — Python (FastAPI, Flask, asyncio, Scapy) · REST APIs · PostgreSQL · SQLite · Docker · GitHub Actions CI/CD · Linux / Bash · pytest · Git
 
-### **Tools & Technologies**
+**Learning** — Penetration Testing (Metasploit, Burp Suite, Nmap) · MISP / OpenCTI · STIX/TAXII
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
----
-
-## 📊 Portfolio Metrics
-
-```
-📦 Projects Shipped:        4 production-grade security tools
-🧪 Total Tests:             150+ automated tests
-📈 Average Coverage:        80%+
-🔄 CI/CD Pipelines:         4/4 passing
-🐳 Docker Deployments:      All containerized
-🌐 API Integrations:        VirusTotal, AbuseIPDB, IP Geolocation
-📝 Lines of Code:           10,000+
-```
 
 ---
 
 ## 🎓 Education & Certifications
 
-**🎓 Bachelor of Software Engineering**  
-Zhengzhou University · 2023 - Present
+**B.Sc. Software Engineering** — Zhengzhou University · 2021–2027
 
-**📜 Certifications & Learning**
 | Status | Certification |
 |--------|--------------|
-| 🔄 In Progress | CompTIA Security+ |
-| 📚 Completed | Python Security Fundamentals |
-| 🎯 Next Goal | CompTIA CySA+ (Cybersecurity Analyst) |
+| 🔄 In progress | CompTIA Security+ (target Q3 2026) |
+| ✅ Completed | Cisco Endpoint Security |
+| ✅ Completed | Cisco Introduction to Cybersecurity |
+| ✅ Completed | Python Security Fundamentals |
 
----
-
-## 🧩 Current Focus
-
-```yaml
-learning:
-  - name: "Penetration Testing"
-    tools: ["Metasploit", "Burp Suite", "Nmap"]
-  
-  - name: "Security Certifications"
-    targets: ["CompTIA Security+", "CySA+"]
-  
-  - name: "Threat Intelligence"
-    platforms: ["MISP", "OpenCTI", "MITRE ATT&CK"]
-
-practice:
-  - platform: "TryHackMe"
-    focus: "SOC Level 1 Path, Network Security"
-  
-  - platform: "PicoCTF"
-    focus: "Web Exploitation, Forensics"
-
-building:
-  - next_project: "Threat Intelligence Platform"
-    tech_stack: ["MISP Integration", "STIX/TAXII", "Threat Feeds"]
-```
+**Practice:** TryHackMe (SOC Level 1 path) · PicoCTF (Web Exploitation, Forensics)
 
 ---
 
 ## 🎯 What I'm Looking For
 
-**Seeking SOC Analyst / Security Engineer roles** where I can:
-- ✅ Build and improve security automation tools
-- ✅ Integrate threat intelligence into detection workflows
-- ✅ Develop playbooks and response procedures
-- ✅ Collaborate with blue teams on incident response
+Seeking an **entry-level SOC Analyst** role where I can work on threat detection, incident response, security automation, and threat-intelligence-driven detection workflows — remote or relocation.
 
-**Why hire me?**
-- 📌 **Proven builder** - 4 production security tools with real threat intel integration
-- 📌 **Quality-focused** - 150+ tests, 80%+ coverage, CI/CD on every project
-- 📌 **Self-starter** - Learned async Python, Docker, CI/CD through building real projects
-- 📌 **Security mindset** - Think like both attacker and defender (CTF experience)
-
----
-
-## 📡 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-dahdouh)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adahdouh123@gmail.com)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/AhmedDAH1)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AhmedDAH1)
-
-📧 **Email:** adahdouh123@gmail.com  
-💼 **LinkedIn:** [linkedin.com/in/ahmed-dahdouh](https://www.linkedin.com/in/ahmed-dahdouh)  
-🔗 **Portfolio:** [github.com/AhmedDAH1](https://github.com/AhmedDAH1?tab=repositories)
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AhmedDAH1&style=flat-square&color=blueviolet" alt="Profile Views"/>
-</p>
-
-<p align="center">
-  <i>"The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards." — Gene Spafford</i>
-</p>
-
----
-
-**⭐ Star my repositories if you find them useful!**
+📧 [adahdouh123@gmail.com](mailto:adahdouh123@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/ahmed-dahdouh) · 🔗 [github.com/AhmedDAH1](https://github.com/AhmedDAH1?tab=repositories)
