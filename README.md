@@ -1,6 +1,6 @@
 # Ahmed Dahdouh
 
-**SOC Analyst · Blue-Team Security Engineer** — building production-grade security tooling with real threat-intelligence integration.
+**Software Engineering student · Detection & response tooling** — graduating 2027.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ahmeddah1.github.io-7d2b2b?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmeddah1.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-dahdouh)
@@ -11,7 +11,7 @@
 
 ## About
 
-Software Engineering student specializing in cybersecurity, focused on the blue-team SOC workflow — alert triage, threat intelligence, log analysis, and incident response. I've built **five security tools**, **four of them deployed as live demos**, each with automated tests, Docker packaging, and CI/CD. Seeking an entry-level SOC Analyst role.
+Software Engineering student at Zhengzhou University, focused on detection engineering: how security teams decide an alert is real and how fast they can act on it. I've built five security tools, four deployed as live demos, each with automated tests, Docker packaging, and CI/CD.
 
 ---
 
@@ -107,6 +107,6 @@ Automated vulnerability scanning with MITRE ATT&CK technique mapping and complia
 
 ## 🎯 What I'm Looking For
 
-Seeking an **entry-level SOC Analyst** role where I can work on threat detection, incident response, security automation, and threat-intelligence-driven detection workflows — remote or relocation.
+Graduate study in IT security, research assistant positions, and security internships, especially work on threat detection, incident response, and detection automation.
 
 📧 [adahdouh123@gmail.com](mailto:adahdouh123@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/ahmed-dahdouh) · 🔗 [github.com/AhmedDAH1](https://github.com/AhmedDAH1?tab=repositories)
