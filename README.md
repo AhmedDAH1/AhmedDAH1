@@ -91,7 +91,7 @@ Automated vulnerability scanning with MITRE ATT&CK technique mapping and complia
 
 ## 🎓 Education & Certifications
 
-**B.Sc. Software Engineering** — Zhengzhou University · 2021–2027
+**B.Sc. Software Engineering** — Zhengzhou University · 2023–2027
 
 | Status         | Certification                                   |
 | -------------- | ----------------------------------------------- |
