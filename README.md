@@ -93,12 +93,13 @@ Automated vulnerability scanning with MITRE ATT&CK technique mapping and complia
 
 **B.Sc. Software Engineering** — Zhengzhou University · 2021–2027
 
-| Status | Certification |
-|--------|--------------|
-| 🔄 In progress | CompTIA Security+ (target Q3 2026) |
-| ✅ Completed | Cisco Endpoint Security |
-| ✅ Completed | Cisco Introduction to Cybersecurity |
-| ✅ Completed | Python Security Fundamentals |
+| Status         | Certification                                   |
+| -------------- | ----------------------------------------------- |
+| ✅ Completed   | [Google Cybersecurity Professional Certificate](https://coursera.org/verify/professional-cert/NM317WORT0FR) (Oct 2026) |
+| ✅ Completed   | Cisco Endpoint Security                         |
+| ✅ Completed   | Cisco Introduction to Cybersecurity             |
+| ✅ Completed   | Python Security Fundamentals                    |
+| 🔄 In progress | CompTIA Security+ (SY0-701)                     |
 
 **Practice:** TryHackMe (SOC Level 1 path) · PicoCTF (Web Exploitation, Forensics)
 
