@@ -11,7 +11,24 @@
 
 ## About
 
-Software Engineering student at Zhengzhou University, focused on detection engineering: how security teams decide an alert is real and how fast they can act on it. I've built five security tools, four deployed as live demos, each with automated tests, Docker packaging, and CI/CD.
+Software Engineering student at Zhengzhou University, focused on detection engineering: how security teams decide an alert is real and how fast they can act on it. My projects are built to work together the way a SOC does: tools that detect, rules that are tested against real attack traffic, and a platform where alerts become incidents. Each has automated tests and CI, and four run as live demos.
+
+---
+
+## 🔗 How the projects fit together
+
+```mermaid
+flowchart LR
+    NS["📡 NetScan<br/>network scanner"] -- "scan traffic" --> DR["Suricata + Sigma rules<br/>that detect NetScan"]
+    SR["🧪 Sigma Detection Rules<br/>tested rule collection"] -.->|"same Sigma rules"| DR
+    DR -- "signed webhook" --> SOAR["🚀 SOAR-Lite<br/>incidents · IOCs · enrichment · playbooks"]
+    LTD["🚨 Log Threat Detector<br/>SSH · web · firewall logs"] -- "signed webhook" --> SOAR
+    ETA["📧 Email Threat Analyzer<br/>phishing verdicts"] -- "signed webhook" --> SOAR
+```
+
+A NetScan scan is caught by the rules written for it, Log Threat Detector flags brute force and port scans in logs, Email Threat Analyzer scores a phishing email, and all three send their alerts to SOAR-Lite as HMAC-signed webhooks. There each alert becomes an incident with its indicators extracted:
+
+![SOAR-Lite incident list with alerts from NetScan's Suricata rules, Log Threat Detector and Email Threat Analyzer](assets/soar-lite-incidents.png)
 
 ---
 
@@ -20,10 +37,9 @@ Software Engineering student at Zhengzhou University, focused on detection engin
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://soar-lite.onrender.com)
 [![Demo Video](https://img.shields.io/badge/▶_6min_Walkthrough-YouTube-red?style=flat-square&logo=youtube)](https://youtu.be/Wade9SSN-Ts)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/soar-lite)
-[![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite/actions)
-[![Coverage](https://img.shields.io/badge/coverage-84%25-brightgreen?style=flat-square)](https://github.com/AhmedDAH1/soar-lite)
+[![CI](https://github.com/AhmedDAH1/soar-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmedDAH1/soar-lite/actions)
 
-Automates the full SOC triage workflow — alert ingestion via webhooks, IOC extraction, async threat-intelligence enrichment (VirusTotal, AbuseIPDB), a YAML playbook engine, and one-click PDF/DOCX reports. Cuts simulated incident response from 30+ minutes to under 2.
+The hub of the pipeline. Automates the SOC triage workflow: signed webhook ingestion, IOC extraction, async threat-intelligence enrichment (VirusTotal, AbuseIPDB), a YAML playbook engine, case management and one-click PDF/DOCX reports. Built on the assumption that alert text is attacker-written: version 2.0 added replay-proof HMAC webhooks, escaping plus a strict Content-Security-Policy against stored XSS, and a read-only public demo. 88 tests.
 
 **Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL/SQLite · Docker
 
@@ -31,48 +47,56 @@ Automates the full SOC triage workflow — alert ingestion via webhooks, IOC ext
 
 ---
 
-## 🛠️ Security Projects
+## 🛠️ Detection & Analysis Projects
 
-### 📧 Email Threat Analyzer — Phishing Detection Engine
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://email-threat-analyzer-zt7f.onrender.com)
-[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/email-threat-analyzer)
+### 🧪 Sigma Detection Rules — Tested Detection-as-Code
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/sigma-detection-rules)
+[![CI](https://github.com/AhmedDAH1/sigma-detection-rules/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmedDAH1/sigma-detection-rules/actions)
 
-Live web tool — paste any `.eml` and see it scored 0–100 across header, URL, attachment, and content modules. Validated at **73% detection on the Nazario phishing corpus** (414 real-world emails), with a labeled benign control demonstrating low false positives. Docker + gunicorn, 34 tests, CI.
+Sigma rules held to a written testing standard: each must fire on real attack telemetry, stay quiet on a benign baseline built to trip it, and be tested at its thresholds, with known blind spots kept as test cases. CI validates every rule and regenerates its Splunk, Elasticsearch (ES|QL) and Microsoft Sentinel (KQL) queries.
 
-**Tech:** Python · Flask · Docker · VirusTotal API · pytest
-**🔗 [Live demo](https://email-threat-analyzer-zt7f.onrender.com)** · **[Code](https://github.com/AhmedDAH1/email-threat-analyzer)**
+**Tech:** Sigma · pySigma · Zeek · Splunk SPL · ES|QL · KQL · GitHub Actions
+**[Code](https://github.com/AhmedDAH1/sigma-detection-rules)**
+
+### 📡 NetScan — Network Scanner and the Rules That Catch It
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://network-scanner-8ihy.onrender.com)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/network-scanner)
+
+Scapy-based scanner (ARP/ICMP discovery, SYN/UDP scanning, banner grabbing, CVE matching by product version), hardened against hostile scan targets. Then the defender's side: Suricata and Sigma rules that detect NetScan at three levels of the Pyramid of Pain, tested in CI against a recorded scan and a benign baseline built to trip them.
+
+**Tech:** Python · Scapy · Suricata · Sigma · Flask · Docker
+**🔗 [Live demo](https://network-scanner-8ihy.onrender.com)** · **[Code](https://github.com/AhmedDAH1/network-scanner)**
 
 ### 🚨 Log Threat Detector — SIEM-Style Log Analysis & Correlation
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://log-threat-detector.onrender.com)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/log_threat_detector)
 
-Ingests SSH, Apache, and syslog files to detect brute-force attempts, port scans, and anomalies; correlation engine identifies cross-source attack patterns. Real-time Flask + WebSocket dashboard, AbuseIPDB enrichment, email alerting, SQLite persistence. Containerized.
+Ingests SSH, Apache, and syslog files to detect brute-force attempts, port scans, and anomalies; a correlation engine identifies cross-source attack patterns. Real-time Flask + WebSocket dashboard, AbuseIPDB enrichment, email alerting, and `--forward` to send alerts to SOAR-Lite. Containerized.
 
-**Tech:** Python · Flask · SQLite · AbuseIPDB API · Chart.js
+**Tech:** Python · Flask · SQLite · AbuseIPDB API
 **🔗 [Live demo](https://log-threat-detector.onrender.com)** · **[Code](https://github.com/AhmedDAH1/log_threat_detector)**
 
-### 📡 Network Scanner — Multi-Threaded Network Reconnaissance
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://network-scanner-8ihy.onrender.com)
-[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/network-scanner)
+### 📧 Email Threat Analyzer — Phishing Detection Engine
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=flat-square)](https://email-threat-analyzer-zt7f.onrender.com)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/email-threat-analyzer)
 
-Scapy-based scanner with ARP/ICMP host discovery, multi-threaded SYN/UDP port scanning, TTL-based OS fingerprinting, MAC vendor lookup, and CVE vulnerability lookup. Web dashboard with live scan streaming. Docker with least-privilege capabilities (NET_RAW, never `--privileged`).
+Live web tool — paste any `.eml` and see it scored 0–100 across header, URL, attachment, and content modules. Validated at **73% detection on the Nazario phishing corpus** (414 real-world emails), with a labeled benign control demonstrating low false positives. Verdicts can be forwarded to SOAR-Lite. Docker + gunicorn, 48 tests, CI.
 
-**Tech:** Python · Scapy · Docker · Flask
-**🔗 [Live demo](https://network-scanner-8ihy.onrender.com)** · **[Code](https://github.com/AhmedDAH1/network-scanner)**
+**Tech:** Python · Flask · Docker · VirusTotal API · pytest
+**🔗 [Live demo](https://email-threat-analyzer-zt7f.onrender.com)** · **[Code](https://github.com/AhmedDAH1/email-threat-analyzer)**
 
-### 🎯 Attack Surface Mapper — Security Assessment Platform
+### 🎯 Earlier: Attack Surface Mapper
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/AhmedDAH1/attack-surface-mapper)
 
-Automated vulnerability scanning with MITRE ATT&CK technique mapping and compliance checks against PCI-DSS v4.0, NIST CSF, and CIS Controls v8. Three interfaces (CLI, terminal dashboard, web UI), Shodan exposure checks, Slack alerting, multi-format reporting (PDF/HTML/CSV/JSON). 23 tests.
-
-**Tech:** Python · Flask-SocketIO · MITRE ATT&CK · Shodan
-**[Code](https://github.com/AhmedDAH1/attack-surface-mapper)**
+An early project wrapping Nmap with MITRE ATT&CK mapping and compliance-framework checks. NetScan, built from raw packets, replaced it.
 
 ---
 
 ## 🔧 Technical Skills
 
 **Security & Blue Team** — Threat Detection · Incident Response · SIEM Concepts · Log Analysis · IOC Extraction · MITRE ATT&CK · Phishing Analysis · Threat Intelligence (VirusTotal, AbuseIPDB, Shodan) · Packet Analysis (Wireshark) · Vulnerability Assessment
+
+**Detection Engineering** — Sigma · Suricata · Zeek · Splunk SPL · Elasticsearch ES|QL · Microsoft Sentinel KQL · Detection testing (true/false-positive validation)
 
 **Development** — Python (FastAPI, Flask, asyncio, Scapy) · REST APIs · PostgreSQL · SQLite · Docker · GitHub Actions CI/CD · Linux / Bash · pytest · Git
 
