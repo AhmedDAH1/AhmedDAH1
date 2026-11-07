@@ -26,9 +26,11 @@ flowchart LR
     ETA["📧 Email Threat Analyzer<br/>phishing verdicts"] -- "signed webhook" --> SOAR
 ```
 
-A NetScan scan is caught by the rules written for it, Log Threat Detector flags brute force and port scans in logs, Email Threat Analyzer scores a phishing email, and all three send their alerts to SOAR-Lite as HMAC-signed webhooks. There each alert becomes an incident with its indicators extracted:
+A NetScan scan is caught by the rules written for it, Log Threat Detector flags brute force and port scans in logs, Email Threat Analyzer scores a phishing email, and all three send their alerts to SOAR-Lite as HMAC-signed webhooks. There each alert becomes an incident with its indicators extracted.
 
-![SOAR-Lite incident list with alerts from NetScan's Suricata rules, Log Threat Detector and Email Threat Analyzer](assets/soar-lite-incidents.png)
+**[SOC Lab](https://github.com/AhmedDAH1/soc-lab)** runs the whole pipeline with one command, from each project's published release, and CI runs it on every push:
+
+![SOC Lab: NetScan scans a target, Suricata catches it, and the alerts become incidents in SOAR-Lite](https://github.com/AhmedDAH1/soc-lab/raw/main/assets/soc-lab.gif)
 
 ---
 
