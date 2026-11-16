@@ -32,7 +32,7 @@ A NetScan scan is caught by the rules written for it, Log Threat Detector flags 
 
 **[SOC Lab](https://github.com/AhmedDAH1/soc-lab)** runs the whole pipeline with one command, from each project's published release, and CI runs it on every push. Its live console shows each step as it happens: start each attack yourself and watch the packets, the Suricata rules firing, the signed alerts and the incidents, or upload your own logs and emails.
 
-![SOC Lab: NetScan scans a target, Suricata catches it, and the alerts become incidents in SOAR-Lite](https://github.com/AhmedDAH1/soc-lab/raw/main/assets/soc-lab.gif)
+![SOC Lab's live console: NetScan scans a target, Suricata catches it, the log, email and forgery lanes run, and SOAR-Lite ends with 23 incidents](https://github.com/AhmedDAH1/soc-lab/raw/main/assets/soc-lab-console.gif)
 
 ---
 
